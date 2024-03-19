@@ -136,9 +136,10 @@ useEffect(()=>{
             title:"",
             diagnosis:"",
             price:""
-      
           }
       )
+      document.getElementById("selectCreateAppointment").selectedIndex = 0;
+
     })
     .catch((error) => {
       if (error.response && error.response.status === 409) {
@@ -216,11 +217,12 @@ updateReports(updateReport).then(() => {
       title:"",
       diagnosis:"",
       price:"",
-      
-
+  
     }
     
   )
+  document.getElementById("selectUpdateAppointment").selectedIndex = 0;
+
 })
   .catch((error) => {
     if (error.response && error.response.status === 409) {
@@ -326,7 +328,7 @@ const handleDelete=(id)=>{
           />
 
                 
-          <select name='appointment'
+          <select id='selectCreateAppointment' name='appointment'
             value={newReport?.appointment?.id}
             onChange={handleNewReport}>
 
@@ -368,7 +370,7 @@ const handleDelete=(id)=>{
         />
 
                 
-        <select name='appointment'
+        <select id='selectUpdateAppointment' name='appointment'
           value={updateReport?.appointment?.id}
           onChange={handleUpdateChange}>
 

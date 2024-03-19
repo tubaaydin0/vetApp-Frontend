@@ -231,7 +231,7 @@ function createData(id, name, mail, address, city, phone) {
           <Table>
             <TableHead className='doctor-table-head'>
               <TableRow>
-                <TableCell>Doktor Id</TableCell>
+             
                 <TableCell>Doktor Adı</TableCell>
                 <TableCell>Doktor Mail</TableCell>
                 <TableCell>Doktor Adres</TableCell>
@@ -243,7 +243,7 @@ function createData(id, name, mail, address, city, phone) {
             <TableBody className='doctor-table-body'>
               {rows.map((row) => (
                 <TableRow key={row.id}>
-                  <TableCell>{row.id}</TableCell>
+                 
                   <TableCell>{row.name}</TableCell>
                   <TableCell>{row.mail}</TableCell>
                   <TableCell>{row.address}</TableCell>

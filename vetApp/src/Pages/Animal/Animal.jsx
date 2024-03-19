@@ -150,8 +150,10 @@ function Animal() {
                 colour: "",
                 dateOfBirth: ""
             });
-           setCreateError(null); // Hata olmadığında error state'ini sıfırla
-        })
+            document.getElementById("selectCreateCustomer").selectedIndex = 0;
+            setCreateError(null); // Hata olmadığında error state'ini sıfırla
+            
+          })
         .catch((error) => {
           if (error.response && error.response.status === 409) {
             setCreateError('Aynı bilgiler tekrar kaydedilemez!');
@@ -260,6 +262,7 @@ const handleUpdate = () => {
               colour: "",
               dateOfBirth: ""
           });
+          document.getElementById("selectUpdateCustomer").selectedIndex = 0;
       })
       .catch((error) => {
         if (error.response && error.response.status === 409) {
@@ -432,7 +435,7 @@ const handleDelete = (id) => {
 
 
               
-        <select name='customer'
+        <select id='selectCreateCustomer' name='customer'
           value={newAnimal?.customer?.id}
           onChange={handleNewAnimal}>
 
@@ -444,7 +447,7 @@ const handleDelete = (id) => {
           ))}
         </select>
 
-        <button onClick={handleCreate}>create</button>
+        <button onClick={handleCreate}>Kaydet</button>
        
     </div>
     <div className="error-message">
@@ -496,11 +499,11 @@ const handleDelete = (id) => {
             onChange={handleUpdateChange}
           />
               
-          <select name='customer'
+          <select  id='selectUpdateCustomer' name='customer'
             value={updateAnimal?.customer?.id}
             onChange={handleUpdateChange}>
 
-            <option value="" disabled selected>Doktor Adı</option>
+            <option value="" disabled selected>Müşteri Adı</option>
             {customers.map((customer) => (
               <option key={customer.id} value={customer.id}>
                 {customer.name}
@@ -508,7 +511,7 @@ const handleDelete = (id) => {
              ))}
           </select>   
                
-          <button onClick={handleUpdate}>update</button>
+          <button onClick={handleUpdate}>Güncelle</button>
     </div>
     <div className="error-message">
       {updateError && <ErrorModal error={updateError} />}

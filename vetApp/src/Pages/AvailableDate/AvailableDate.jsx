@@ -204,7 +204,7 @@ const handleUpdate = () => {
       availableDate:""
     }
   )
-  document.getElementById("selectCreateDoctor").selectedIndex=0;
+  document.getElementById("selectUpdateDoctor").selectedIndex=0;
 
 })
   .catch((error) => {

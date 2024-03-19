@@ -159,6 +159,10 @@ if (!newAppointment?.animal?.id) {
      
         }
     )
+    document.getElementById("selectCreateAnimal").selectedIndex = 0;
+    document.getElementById("selectCreateDoctor").selectedIndex = 0;
+
+
   })
   .catch((error) => {
     if (error.response && error.response.data && error.response.data.message) {
@@ -379,6 +383,11 @@ if (!updateAppointment?.animal?.id) {
 }
 updateAppointments(updateAppointment).then(() => {
     setReload(true);
+    setUpdateAppointment({
+      appointmentDate: ''
+  });
+  document.getElementById("selectUpdateDoctor").selectedIndex = 0;
+  document.getElementById("selectUpdateAnimal").selectedIndex = 0;
   })
   .catch((error) => {
     if (error.response && error.response.data && error.response.data.message) {
@@ -548,7 +557,7 @@ const handleDelete = (id) => {
           />
 
                   
-          <select name='doctor'
+          <select id='selectCreateDoctor' name='doctor'
             value={newAppointment?.doctor?.id}
             onChange={handleNewAppointment}>
 
@@ -560,7 +569,7 @@ const handleDelete = (id) => {
               ))}
           </select>
 
-          <select name='animal'
+          <select id='selectCreateAnimal' name='animal'
             value={newAppointment?.animal?.id}
             onChange={handleNewAppointment}>
 
@@ -590,7 +599,7 @@ const handleDelete = (id) => {
         />
 
                     
-        <select name='doctor'
+        <select id='selectUpdateDoctor' name='doctor'
           value={updateAppointment?.doctor?.id}
           onChange={handleUpdateChange}>
 
@@ -602,7 +611,7 @@ const handleDelete = (id) => {
           ))}
         </select>
 
-        <select name='animal'
+        <select id='selectUpdateAnimal' name='animal'
           value={updateAppointment?.animal?.id}
           onChange={handleUpdateChange}>
 

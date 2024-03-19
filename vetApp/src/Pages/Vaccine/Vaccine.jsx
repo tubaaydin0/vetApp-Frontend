@@ -197,6 +197,8 @@ function Vaccine() {
                     protectionStartDate:"",
                     protectionFinishDate:"",
                 });
+                document.getElementById("selectCreateAnimal").selectedIndex = 0;
+                 document.getElementById("selectCreateReport").selectedIndex = 0;
                 setCreateError(null); // Başarılı olunduğunda hatayı temizle
             })
             .catch((error) => {
@@ -392,6 +394,8 @@ const handleUpdate = () => {
         protectionStartDate:"",
         protectionFinishDate:"",
       });
+      document.getElementById("selectUpdateAnimal").selectedIndex = 0;
+      document.getElementById("selectUpdateReport").selectedIndex = 0;
     }).catch((error) => {
       if (error.response && error.response.data && error.response.data.message) {
         setUpdateError(error.response.data.message);
@@ -560,7 +564,7 @@ const handleDelete = (id) => {
                     onChange={handleNewVaccine}
                 />
               
-                <select name='animal'
+                <select id='selectCreateAnimal' name='animal'
                     value={newVaccine?.animal?.id}
                     onChange={handleAnimalCreateChange}>
 
@@ -572,7 +576,7 @@ const handleDelete = (id) => {
                     ))}
                 </select>
 
-                <select name='report'
+                <select id='selectCreateReport' name='report'
                     value={newVaccine?.report?.id}
                     onChange={handleNewVaccine}>
 
@@ -621,7 +625,7 @@ const handleDelete = (id) => {
                     onChange={handleUpdateChange}
                 />
               
-                <select name='animal'
+                <select id='selectUpdateAnimal' name='animal'
                     value={updateVaccine?.animal?.id}
                     onChange={handleAnimalUpdateChange}>
 
@@ -633,7 +637,7 @@ const handleDelete = (id) => {
                     ))}
                 </select>
 
-                <select name='report'
+                <select id='selectUpdateReport' name='report'
                     value={updateVaccine?.report?.id}
                     onChange={handleUpdateChange}>
 
