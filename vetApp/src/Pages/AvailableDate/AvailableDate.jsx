@@ -111,10 +111,10 @@ useEffect(()=>{
       setNewAvailableDate(
           {
               availableDate: "",
-            
-      
+  
           }
       )
+      document.getElementById("selectCreateDoctor").selectedIndex=0;
     })
     .catch((error) => {
       if (error.response && error.response.status === 409) {
@@ -204,6 +204,8 @@ const handleUpdate = () => {
       availableDate:""
     }
   )
+  document.getElementById("selectCreateDoctor").selectedIndex=0;
+
 })
   .catch((error) => {
     if (error.response && error.response.status === 409) {
@@ -282,7 +284,7 @@ const handleDelete = (id) => {
         />
 
               
-        <select name='doctor'
+        <select id="selectCreateDoctor" name='doctor'
           value={newAvailableDate?.doctor?.id}
           onChange={handleNewAvailableDate}>
 
@@ -315,7 +317,7 @@ const handleDelete = (id) => {
         />
 
               
-        <select name='doctor'
+        <select id="selectUpdateDoctor" name='doctor'
           value={updateAvailableDate?.doctor?.id}
           onChange={handleUpdateChange}>
 
