@@ -1,0 +1,183 @@
+.vaccine-page .error-message{
+    margin-left: 1%;
+    color: red;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.vaccine-page h1{
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.7rem;
+    background-color: #d13f5e;
+    margin-left: 40%;
+    border-radius: 10px;
+    padding: 1%;
+    margin-top: 8%;
+}
+
+.vaccine-page h2{
+    color: #d13f5e;
+    font-size: 1.6rem;
+    margin-left: 1%;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.vaccine-filters{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 3%;
+    margin-bottom: 2%;
+   
+}
+
+.vaccine-page h4{
+
+    color: #d13f5e;
+    font-size: 1.4rem;
+   margin-top: -0.1em;
+   margin-bottom: -0.1em;
+    font-weight: bold;
+    
+}
+.animalName-filter{
+    color: rgb(37, 36, 36);
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+
+.vaccineDate-filter{
+    color: rgb(37, 36, 36);
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+.vaccine-filters input{
+    margin-left: 10px;
+
+
+}
+.vaccine-filters select{
+    width: 10%;
+}
+
+.vaccine-filters .filter-buttons{
+    display: flex;
+    gap: 15%;
+    flex-direction: row;
+    margin-left: 60%;
+
+
+}
+
+.vaccine-filters .filter-buttons button{
+    width: 30%;
+    padding: 2%;
+    text-align: center;
+    background-color: #d13f5e;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.vaccine-filters .filter-buttons button:hover{
+    box-shadow: rgb(206, 119, 119) 0px 5px 15px;
+}
+
+.vaccine-page .vaccine-table-head{
+    background-color: #d13f5e;
+    color: rgb(37, 36, 36);
+    font-size: 1.2rem;
+    font-weight: 700;
+  
+
+}
+
+.vaccine-page .vaccine-table-body{
+    color: rgb(37, 36, 36);
+    font-weight: 500;
+    
+}
+
+
+.vaccine-create{
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    margin-left: 1%;
+    margin-top: 3%;
+    margin-right: 1%;
+    margin-bottom: 3%;
+}
+
+.vaccine-create input{
+    margin-left: 10px;
+    width: 15%;
+
+}
+.vaccine-create select{
+    width: 15%;
+}
+
+.vaccine-create button{
+    
+    width: 10%;
+    padding: 0.5%;
+    border-radius: 7px;
+    border: 0;
+    background-color: #d13f5e;
+    cursor: pointer;
+    font-weight: 700;
+    color: white;
+}
+
+.vaccine-create button:hover{
+    box-shadow: rgb(206, 119, 119) 0px 5px 15px;
+}
+
+
+.vaccine-update{
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    margin-left: 1%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-right: 1%;
+}
+
+.vaccine-update input{
+    margin-left: 10px;
+    width: 15%;
+
+}
+.vaccine-update select{
+    width: 15%;
+}
+
+.vaccine-update button{
+    
+    width: 10%;
+    padding: 0.5%;
+    border-radius: 7px;
+    border: 0;
+    background-color: #d13f5e;
+    cursor: pointer;
+    font-weight: 700;
+    color: white;
+}
+
+.vaccine-update button:hover{
+    box-shadow: rgb(206, 119, 119) 0px 5px 15px;
+}

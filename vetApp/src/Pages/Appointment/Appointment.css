@@ -1,0 +1,181 @@
+.appointment-page .error-message{
+    margin-left: 1%;
+    color: red;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.appointment-page h1{
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.7rem;
+    background-color: #d13f5e;
+    margin-left: 36%;
+    border-radius: 10px;
+    padding: 1%;
+    margin-top: 8%;
+}
+
+.appointment-page h2{
+    color: #d13f5e;
+    font-size: 1.6rem;
+    margin-left: 1%;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.appointment-filters{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 3%;
+    margin-bottom: 2%;
+   
+}
+
+.appointment-page h4{
+
+    color: #d13f5e;
+    font-size: 1.4rem;
+   margin-top: -0.1em;
+   margin-bottom: -0.1em;
+    font-weight: bold;
+    
+}
+.doctorAndDate-filter{
+    color: rgb(37, 36, 36);
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+
+.animalAndDate-filter{
+    color: rgb(37, 36, 36);
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+.appointment-filters input{
+    margin-left: 10px;
+
+
+}
+.appointment-filters select{
+    width: 10%;
+}
+
+.appointment-filters .filter-buttons{
+    display: flex;
+    gap: 15%;
+    flex-direction: row;
+    margin-left: 70%;
+
+
+}
+
+.appointment-filters .filter-buttons button{
+    width: 30%;
+    padding: 2%;
+    text-align: center;
+    background-color: #d13f5e;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.appointment-filters .filter-buttons button:hover{
+    box-shadow: rgb(206, 119, 119) 0px 5px 15px;
+}
+
+.appointment-page .appointment-table-head{
+    background-color: #d13f5e;
+    color: rgb(37, 36, 36);
+    font-size: 1.2rem;
+    font-weight: 700;
+  
+
+}
+
+.appointment-page .appointment-table-body{
+    color: rgb(37, 36, 36);
+    font-weight: 500;
+    
+}
+
+
+.appointment-create{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    margin-left: 1%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.appointment-create input{
+    margin-left: 10px;
+    width: 15%;
+
+}
+.appointment-create select{
+    width: 15%;
+}
+
+.appointment-create button{
+    
+    width: 10%;
+    padding: 0.5%;
+    border-radius: 7px;
+    border: 0;
+    background-color: #d13f5e;
+    cursor: pointer;
+    font-weight: 700;
+    color: white;
+}
+
+.appointment-create button:hover{
+    box-shadow: rgb(206, 119, 119) 0px 5px 15px;
+}
+
+
+.appointment-update{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    margin-left: 1%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.appointment-update input{
+    margin-left: 10px;
+    width: 15%;
+
+}
+.appointment-update select{
+    width: 15%;
+}
+
+.appointment-update button{
+    
+    width: 10%;
+    padding: 0.5%;
+    border-radius: 7px;
+    border: 0;
+    background-color: #d13f5e;
+    cursor: pointer;
+    font-weight: 700;
+    color: white;
+}
+
+.appointment-update button:hover{
+    box-shadow: rgb(206, 119, 119) 0px 5px 15px;
+}

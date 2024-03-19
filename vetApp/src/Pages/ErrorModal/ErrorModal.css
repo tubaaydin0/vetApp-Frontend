@@ -1,0 +1,10 @@
+.error-content {
+   display: flex;
+
+
+    padding-left: 5%;
+    margin-left: 10%;
+}
+.error-content img{
+    margin-left: 10%;
+}
