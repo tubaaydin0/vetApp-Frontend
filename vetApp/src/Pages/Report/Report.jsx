@@ -340,7 +340,7 @@ const handleDelete=(id)=>{
               ))}
           </select>
 
-          <button onClick={handleCreate}>create</button>
+          <button onClick={handleCreate}>Kaydet</button>
         </div>
         <div className="error-message">
           {createError && <ErrorModal error={createError} />}
@@ -381,7 +381,7 @@ const handleDelete=(id)=>{
             </option>
           ))}
         </select>
-        <button onClick={handleUpdate}>update</button>
+        <button onClick={handleUpdate}>Güncelle</button>
       
       </div>
       <div className="error-message">
